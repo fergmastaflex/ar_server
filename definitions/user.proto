@@ -1,0 +1,18 @@
+package protos;
+message User {
+  optional string first_name = 1;
+  optional string last_name = 2;
+  optional int32 id = 3;
+}
+
+message Users {
+  repeated User records = 1;
+}
+
+message UserRequest {
+  optional int32 id = 1;
+}
+
+service UserService {
+  rpc Search (UserRequest) returns (Users);
+}
