@@ -1,24 +1,7 @@
-# README
+# How to demo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+You have to start an rpc_server. That should be it for this app.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rpc_server -o 127.0.0.1 -p 9399  ./config/environment.rb
+```
